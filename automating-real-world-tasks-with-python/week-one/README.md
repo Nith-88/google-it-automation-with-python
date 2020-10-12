@@ -26,10 +26,12 @@ Unpacking python3-pil:amd64 (4.3.0-2) ...
 Setting up python3-pil:amd64 (4.3.0-2) ...
 
 For other environments, you should use Python's package installer, pip3. Like this:
-$ pip3 install pillow
-Collecting pillow
+
+ $ pip3 install pillow
+  Collecting pillow
   Downloading https://files.pythonhosted.org/packages/85/28/2c72ba965b52884a0bd71e419761fc162763dc2e5d9bec2f3b1949f7272a/Pillow-6.2.1-cp37-cp37m-macosx_10_6_intel.whl (3.9MB)
      |████████████████████████████████| 3.9MB 1.7MB/s
+     
 Installing collected packages: pillow
 Successfully installed pillow-6.2.1
 
@@ -53,9 +55,11 @@ How do you learn to use a library or an API that you’ve never worked with befo
 In general, a good API should be descriptive. You should be able to look at a function's name and have a pretty good idea of what it will do. A well-designed API will follow patterns and naming conventions. That means that the functions, classes and methods should have names that help you understand what to expect from them. And when the name isn’t enough, you should have access to the documentation for each of the functions that will help you figure out what they do.
 
 For example, when we visit the reference page for the Image object in Pillow, we see this piece of example code:
-from PIL import Image
-im = Image.open("bride.jpg")
-im.rotate(45).show()
+
+CODE:
+    from PIL import Image
+      im = Image.open("bride.jpg")
+      im.rotate(45).show()
 
 This piece of code is pretty straightforward. Even without having seen this library before, you can probably guess that it opens an image called bride.jpg, rotates it 45 degrees, and then shows it on the screen.
 
@@ -85,7 +89,7 @@ DESCRIPTION
 
     ;-)
 
-PACKAGE CONTENTS
+    PACKAGE CONTENTS
     BdfFontFile
     BlpImagePlugin
     BmpImagePlugin
